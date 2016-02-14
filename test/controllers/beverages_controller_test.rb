@@ -2,7 +2,7 @@ require 'test_helper'
 
 class BeveragesControllerTest < ActionController::TestCase
   setup do
-    @beverage = beverages(:one)
+    @beverage = beverages(:natty)
   end
 
   test "should get index" do

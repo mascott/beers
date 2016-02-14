@@ -1,11 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
+billy_natty:
   value: 1
-  user_id: 
-  beverage_id: 
+  user: billy
+  beverage: natty
 
-two:
-  value: 1
-  user_id: 
-  beverage_id: 
+willis_moon:
+  value: 5
+  user: willis
+  beverage: moon

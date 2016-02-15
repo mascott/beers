@@ -17,11 +17,11 @@
   </div>
   <div class="field">
     <%= f.label :user_id %><br>
-    <%= f.text_field :user_id %>
+    <%= f.collection_select :user_id, User.all, :id, :name, prompt: true %>
   </div>
   <div class="field">
     <%= f.label :beverage_id %><br>
-    <%= f.text_field :beverage_id %>
+    <%= f.collection_select :beverage_id, Beverage.all, :id, :name, prompt: true %>
   </div>
   <div class="actions">
     <%= f.submit %>

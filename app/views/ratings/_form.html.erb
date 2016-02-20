@@ -1,16 +1,5 @@
 <%= form_for(@rating) do |f| %>
-  <% if @rating.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@rating.errors.count, "error") %> prohibited this rating from being saved:</h2>
-
-      <ul>
-      <% @rating.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
+  <%= render 'errors', model: @rating %>
   <div class="field">
     <%= f.label :value %><br>
     <%= f.number_field :value %>
